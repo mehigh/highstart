@@ -1,0 +1,13 @@
+@import "compass/support";
+
+$experimental-support-for-opera:false; // Starting with Opera 12.1 (out of 24), -o- prefix is no longer needed for CSS3 transition, border-radius
+$experimental-support-for-khtml:false;
+$support-for-original-webkit-gradients:false;
+$legacy-support-for-ie:false; // No IE6/7
+$legacy-support-for-ie7:false;
+$legacy-support-for-ie6:false;
+$experimental-support-for-microsoft:false;
+$experimental-support-for-mozilla:true; // Starting with Firefox 16 (out of 34) -moz- are no longer needed for CSS3 transition, border-radius, but there are still a couple of features requiring the prefix
+
+/* Adds cross-browser @include CSS3-syntax: http://is.gd/HwRUlq */
+@import "compass/css3";

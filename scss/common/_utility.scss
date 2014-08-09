@@ -1,0 +1,31 @@
+.visible-small {
+	display: block;
+
+	@include mq(mediumup) {
+		display: none;
+	}
+}
+
+.visible-medium {
+	display: none;
+
+	@include mq(medium) {
+		display: block;
+	}
+}
+
+.visible-mediumup {
+	display: none;
+
+	@include mq(mediumup) {
+		display: block;
+	}
+}
+
+.visible-large {
+	display: none;
+
+	@include mq(large) {
+		display: block;
+	}
+}

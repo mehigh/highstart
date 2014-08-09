@@ -1,0 +1,15 @@
+@import 'common/_browser-support';
+@import '_mixins';
+
+/** External libraries **/
+@import 'compass/utilities/general/clearfix';
+.clearfix { @include legacy-pie-clearfix; }
+
+/** Common parts **/
+@import '_variables';
+@import '../bower_components/normalize.scss/_normalize';
+@import 'common/_utility';
+@import 'common/_typography';
+
+@import 'common/_header';
+@import 'common/_footer';

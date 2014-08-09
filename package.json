@@ -1,0 +1,20 @@
+{
+  "name": "ProjectName",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "bower": "^1.3.9",
+    "gulp": "^3.8.7",
+    "gulp-minify-css": "^0.3.7",
+    "gulp-ruby-sass": "^0.7.1"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^2.1.0",
+    "gulp-plumber": "^0.6.4",
+    "gulp-notify": "^1.4.2",
+    "gulp-watch": "^0.6.9"
+  }
+}

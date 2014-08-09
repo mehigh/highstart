@@ -1,0 +1,24 @@
+{
+  "name": "ProjectName",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mehigh/highstart.git",
+  "authors": [
+    "Mike Crantea <me@mehigh.biz>"
+  ],
+  "main": "html/index.html",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.scss": "~2.2.0"
+  }
+}
