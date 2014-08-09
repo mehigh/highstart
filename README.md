@@ -12,6 +12,7 @@ Clone the repository, and run the following commands to set things up:
 To enable automatic compiling of the SASS + Compass files, which also generate the sourcemaps, run:
 
 `gulp`
+
 **! Tip:** Use [LiveReload Extensions](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions) for the styles updates to be visible in the browser automatically.
 
 To generate production-ready CSS files run
