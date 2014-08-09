@@ -1,3 +1,7 @@
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
 .visible-small {
 	display: block;
 
@@ -28,4 +32,68 @@
 	@include mq(large) {
 		display: block;
 	}
+}
+
+/* WP Standard Editor Classes */
+
+.aligncenter {
+	text-align: center;
+}
+
+.alignleft {
+	text-align: left;
+}
+
+.alignright {
+	text-align: right;
+}
+
+img {
+	&.aligncenter {
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: $image-spacing;
+		margin-bottom: $image-spacing;
+	}
+
+	&.alignleft {
+		clear: left;
+		float: left;
+		margin-right: $image-spacing;
+		margin-bottom: $image-spacing;
+	}
+
+	&.alignright {
+		clear: right;
+		float: right;
+		margin-left: $image-spacing;
+		margin-bottom: $image-spacing;
+	}
+}
+
+
+/* Responsive Videos */
+
+.video-responsive {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+
+	iframe,
+	object,
+	embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
+}
+
+video {
+	max-width: 100%;
+	height: auto !important;
 }
