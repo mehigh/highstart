@@ -3,11 +3,9 @@ HighStart
 
 Front-end Mobile-First Barebone start: Gulp + Bower + SASS + Compass + Normalize + SourceMaps
 
-Clone the repository, and run the following commands to set things up:
+Clone the repository, and run the following command to set things up:
 
-`bundle install`
 `npm install`
-`bower install`
 
 To enable automatic compiling of the SASS + Compass files, which also generate the sourcemaps, run:
 
