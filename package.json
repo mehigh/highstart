@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "preinstall": "sudo npm i -g gulp & bundle install & bower install",
+    "preinstall": "sudo npm i -g gulp; bundle install; bower install",
     "start": "node app"
   },
   "dependencies": {
