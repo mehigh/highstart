@@ -1,13 +1,13 @@
 HighStart
 =========
 
-Front-end Mobile-First Barebone start: Gulp + Bower + SASS + Compass + Normalize + SourceMaps
+Front-end Mobile-First Barebone start: Gulp + Bower + libSASS + Normalize + SourceMaps
 
 Clone the repository, and run the following command to set things up:
 
 `npm install`
 
-To enable automatic compiling of the SASS + Compass files, which also generate the sourcemaps, run:
+To enable automatic compiling of the SASS files, which also generate the sourcemaps, run:
 
 `gulp`
 
@@ -22,7 +22,7 @@ To read more about editing the .sass files directly in Chrome Developer Tools, s
 
 System requirements:
 
-* Ruby
-* Ruby Gems
 * Node
 * NPM
+* Gulp
+* Bower

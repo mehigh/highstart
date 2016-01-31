@@ -1,8 +1,8 @@
 var gulp = require('gulp'),
-		minifyCSS = require('gulp-minify-css'),
+		minifyCSS = require('gulp-cssnano'),
 		watch = require('gulp-watch'),
 		plumber = require('gulp-plumber'),
-		sass = require('gulp-ruby-sass'),
+		sass = require('gulp-sass'),
 		livereload = require('gulp-livereload'),
 		notify = require('gulp-notify');
 
@@ -12,13 +12,20 @@ gulp.task('default', function() {
 
 gulp.task('sass-watch', function() {
 	return gulp.src('./scss/**/*.scss')
-		.pipe(plumber())
+		.pipe(plumber({
+        handleError: function (err) {
+            console.log(err);
+            this.emit('end');
+        }
+    }))
 		.pipe(sass({
-		    compass: true,
+				includePaths: [
+					'bower_components/normalize.scss/sass',
+					'bower_components/support-for/sass'
+				],
 		    sourcemap: true,
 		    sourcemapPath: '../scss'
 		  }))
-		.pipe(plumber.stop())
 		.pipe(gulp.dest('stylesheets'))
 		.pipe(notify("Compiled <%= file.relative %>"))
     .pipe(livereload());
@@ -27,7 +34,10 @@ gulp.task('sass-watch', function() {
 gulp.task('production', function() {
 	gulp.src('./scss/*.scss')
   .pipe(sass({
-  	compass: true,
+  	includePaths: [
+			'bower_components/normalize.scss/sass',
+			'bower_components/support-for/sass'
+		],
   	sourcemap: false
   }))
   .pipe(minifyCSS())

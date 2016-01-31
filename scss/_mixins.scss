@@ -1,3 +1,4 @@
+// Target individual screen sizes
 @mixin mq($size) {
   // mobile = only on mobile-width screens
   @if $size == small {
@@ -31,4 +32,21 @@
 
 @function em($pxval, $base: $base-font-px-size) {
   @return ($pxval / $base) * 1em;
+}
+
+// Clearfix playing nicely with flexbox layouts
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  flex-basis: 0;
+  order: 1;
 }
