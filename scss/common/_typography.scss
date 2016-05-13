@@ -1,6 +1,8 @@
 body {
 	font-family: $base-font;
+	/* stylelint-disable */
 	font-size: #{$base-font-px-size / 16}em;
+	/* stylelint-enable */
 }
 
 /* Links */
@@ -16,32 +18,48 @@ a {
 
 /* Headings */
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
 
 }
 
-h1, .h1 {
+h1,
+.h1 {
 	font-size: em(32);
 }
 
-h2, .h2 {
+h2,
+.h2 {
 	font-size: em(29);
 }
 
-h3, .h3 {
+h3,
+.h3 {
 	font-size: em(26);
 }
 
-h4, .h4 {
+h4,
+.h4 {
 	font-size: em(23);
 }
 
-h5, .h5 {
+h5,
+.h5 {
 	font-size: em(20);
 }
 
-h6, .h6 {
+h6,
+.h6 {
 	font-size: em(17);
 }
 
@@ -58,17 +76,19 @@ blockquote {
 /* Lists */
 
 article {
-	ul, ol {
+	ul,
+	ol {
 		margin-left: 1em;
-		margin-bottom: #{$base-font-size / 2};
-		ul, ol {
+		margin-bottom: 7px;
+		ul,
+		ol {
 			margin-bottom: 0;
-			padding-top: #{$base-font-size / 4};
+			padding-top: 4px;
 			font-size: 1em;
 		}
 		li {
-			padding-top: #{$base-font-size / 4};
-			padding-bottom: #{$base-font-size / 4};
+			padding-top: 4px;
+			padding-bottom: 4px;
 		}
 	}
 
@@ -87,6 +107,7 @@ hr {
 	clear: both;
 }
 
-abbr, acronym {
+abbr,
+acronym {
 	cursor: help;
 }

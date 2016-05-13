@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 
@@ -73,9 +75,7 @@ img {
 	}
 }
 
-
 /* Responsive Videos */
-
 .video-responsive {
 	position: relative;
 	padding-bottom: 56.25%;
