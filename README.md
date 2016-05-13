@@ -1,7 +1,7 @@
 HighStart
 =========
 
-Front-end Mobile-First Barebone start: Gulp + Bower + libSASS + Normalize + SourceMaps
+Front-end Mobile-First Barebone start: Gulp + Bower + libSASS + Normalize + Autoprefixer + Stylelint
 
 Clone the repository, and run the following command to set things up:
 
